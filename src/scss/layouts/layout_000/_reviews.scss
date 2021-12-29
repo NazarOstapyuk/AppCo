@@ -1,0 +1,120 @@
+.reviews {
+  padding: 55px 0;
+}
+
+.reviews-body {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 20px;
+  @include e(title) {
+    font-family: $baseFontTitle;
+    font-weight: 600;
+    line-height: 1.21;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  @include e(p) {
+    font-size: 1.1rem;
+    color: $grey;
+    margin-bottom: 1.23rem;
+  }
+}
+.reviews-list {
+  display: flex;
+  flex-direction: row;
+  @include e(marks) {
+    @include m(custome) {
+      max-width: 85px;
+      width: 100%;
+      height: auto;
+    }
+    @include m(item) {
+      display: inline-block;
+      margin-right: 0.5rem;
+      padding-right: 50px;
+    }
+  }
+}
+.reviews-animatio {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.reviews-item {
+  // max-width: 100%;
+  // width: 510px;
+  // margin-right: 30px;
+  // margin-bottom: 20px;
+  max-width: 100%;
+  width: 100%;
+}
+.reviews-media {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  @include e(img) {
+    width: 4.25rem;
+    height: 4.25rem;
+    margin-right: 1rem;
+    @include m(custome) {
+      display: block;
+      max-width: 100%;
+      border-radius: 50%;
+    }
+  }
+  @include e(text) {
+    font-family: $baseFontTitle;
+    font-size: 1.16rem;
+    font-weight: 600;
+    line-height: 1.21;
+    @include m(span) {
+      font-family: $baseFontFamily;
+      font-size: 15px;
+      color: $grey;
+      font-weight: normal;
+    }
+  }
+}
+.reviews-talking {
+  @include e(p) {
+    line-height: 1.75rem;
+    font-size: 15px;
+    color: $grey;
+
+    @include m(custome) {
+      position: relative;
+      width: 6%;
+      display: initial;
+      top: 5px;
+      margin-right: 10px;
+    }
+  }
+}
+.reviews-owl {
+  transform: translate3d(0px, 0px, 0px);
+  transition: all 0.25s ease 0s;
+  // width: 1600px;
+
+  position: relative;
+}
+.reviews-btn {
+  position: absolute;
+  margin-top: 4px;
+  left: 0;
+  bottom: -35px;
+  @include e(custome) {
+    &:hover {
+      background-color: $purple;
+    }
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+    box-shadow: 0 0 0 1px #ebebeb;
+    background: #ffffff;
+    border-radius: 50%;
+  }
+}

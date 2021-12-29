@@ -1,0 +1,19 @@
+.screen-slider {
+  display: flex;
+}
+.screen-item {
+  width: 195px;
+  height: 345px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.img-fluid {
+  width: 195px;
+  height: 345px;
+  transition: all linear 0.4s;
+}
+
+.screen-slider .slick-center .img-fluid {
+  transform: scale(1.2);
+}

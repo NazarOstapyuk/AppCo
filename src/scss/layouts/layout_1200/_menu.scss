@@ -1,0 +1,24 @@
+.mobile-menu-container {
+  display: none;
+}
+
+.menu-button {
+  display: none;
+}
+.navbar-menu {
+  display: block;
+}
+.navbar-desctop {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  @include e(item) {
+    position: relative;
+    display: inline-block;
+  }
+  @include e(link) {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    font-weight: bold;
+  }
+}

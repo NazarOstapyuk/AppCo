@@ -1,0 +1,23 @@
+.blog-body{
+    @include e(title){
+        font-size:2.25rem;
+    }
+    @include e(p){
+        font-size:1.16rem;
+    }
+}
+.blog-post{
+    @include e(menu){
+        @include m(item){
+         font-size:12px;   
+        }
+    }
+    @include e(title){
+        @include m(a){
+            font-size:1.16rem;  
+        }
+    }
+    @include e(p){
+        font-size:15px;
+    }
+}

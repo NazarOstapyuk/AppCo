@@ -1,0 +1,8 @@
+.descript-main {
+  @include e(h1) {
+    font-size: 2.63rem;
+  }
+  @include e(p) {
+    font-size: 1.16rem;
+  }
+}

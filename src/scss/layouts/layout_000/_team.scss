@@ -1,0 +1,61 @@
+.team {
+  padding: 55px 0;
+  background: #f4f7fa;
+}
+
+.team-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.team-body {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  text-align: center;
+  margin-bottom: 3rem;
+  @include e(title) {
+    font-size: 1.5rem;
+    font-family: $baseFontTitle;
+    font-weight: 600;
+    line-height: 1.21;
+    margin-bottom: 1rem;
+  }
+  @include e(p) {
+    font-size: 1.1rem;
+    color: $grey;
+    margin-bottom: 1.25rem;
+  }
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.team-box {
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.team-position {
+  position: relative;
+}
+.team-image {
+  @include e(img) {
+    display: block;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    max-width: 100%;
+    border-radius: 50%;
+  }
+}
+
+.team-info {
+  display: none;
+}

@@ -1,0 +1,73 @@
+.download {
+  padding-top: 55px;
+  color: $white;
+}
+.background-image {
+  position: relative;
+  width: 100%;
+  display: block;
+  background: url(../../../i/img/bg/app-hero-bg.jpg) no-repeat center
+    center/cover;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(
+      to right,
+      rgba(32, 40, 119, 0.95),
+      rgba(55, 46, 149, 0.95),
+      rgba(83, 49, 177, 0.9),
+      rgba(114, 48, 205, 0.85),
+      rgba(150, 41, 230, 0.95)
+    );
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.download-box {
+  position: relative;
+  width: 100%;
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+.download-body {
+  padding-bottom: 55px;
+  @include e(title) {
+    font-family: $baseFontTitle;
+    font-size: 1.5rem;
+    line-height: 1.21;
+    margin-bottom: 14px;
+  }
+  @include e(p) {
+    font-size: 1.1rem;
+    margin-bottom: 1.25em;
+  }
+}
+.download-btn {
+  @include e(custome) {
+    font-family: $baseFontTitle;
+    display: inline-block;
+    border: 1px solid #050303;
+    background: #ffffff;
+    border-radius: 30px;
+    color: #6730e3;
+    padding: 12px 30px;
+    margin: 7px 0;
+    @include m(mr) {
+      margin-right: 14px;
+    }
+  }
+}
+.download-box2 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.download-img {
+  display: flex;
+  @include e(custome) {
+    max-width: 100%;
+    height: auto;
+  }
+}

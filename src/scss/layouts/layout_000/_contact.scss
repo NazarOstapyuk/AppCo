@@ -1,0 +1,108 @@
+.mr {
+  margin-bottom: 20px;
+}
+.mt {
+  margin-top: 1rem;
+}
+
+.contact {
+  padding: 55px 0;
+  background: #f4f7fa;
+}
+.contact-body {
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  @include e(head) {
+    @include m(h2) {
+      font-family: $baseFontTitle;
+      font-size: 1.5rem;
+      font-weight: 600;
+      line-height: 1.21;
+      margin-bottom: 1rem;
+    }
+    @include m(p) {
+      color: $grey;
+      margin-bottom: 1rem;
+    }
+  }
+  @include e(botton) {
+    @include m(h6) {
+      font-family: $baseFontTitle;
+      color: $grey;
+      font-weight: 500;
+    }
+    @include m(p) {
+      color: $grey;
+      margin-bottom: 1rem;
+    }
+    @include m(list) {
+      color: $grey;
+    }
+    @include m(link) {
+      color: blue;
+    }
+  }
+}
+.contact-apply {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.contact-form {
+  @include e(h5) {
+    font-family: $baseFontTitle;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  @include e(p) {
+    margin-bottom: 14px;
+  }
+  @include e(box) {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    @include m(input) {
+      display: block;
+      border: 1px solid #ebebeb;
+      background-color: #fff;
+      width: 100%;
+      border-radius: 0.25rem;
+      height: 48px;
+      font-size: 0.85rem;
+      margin-bottom: 1rem;
+      padding: 2px 0px;
+    }
+    @include m(textarea) {
+      display: block;
+      border: 1px solid #ebebeb;
+      background-color: #fff;
+      width: 100%;
+      border-radius: 0.25rem;
+      padding: 9px 0px;
+      padding-left: 2px;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+    @include m(btn) {
+      &:hover {
+        opacity: 1;
+      }
+      cursor: pointer;
+      opacity: 0.65;
+      color: #fff;
+      background: #6730e3;
+      border: 2px solid #6730e3;
+      border-radius: 30px;
+      padding: 10px 25px;
+    }
+  }
+}
+.invalid {
+  color: red;
+  margin-bottom: 0;
+}

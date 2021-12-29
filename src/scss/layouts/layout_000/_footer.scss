@@ -1,0 +1,114 @@
+.a {
+  color: $white;
+}
+a {
+  color: $white;
+}
+.span {
+  margin: 0;
+  margin-right: 7px;
+  font-size: 18px;
+}
+.footer {
+  color: $white;
+  padding-top: 50px;
+  background: url(../../../i/img/bg__figur/footer-bg.png) no-repeat center
+    top/cover;
+}
+.footer-head {
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  @include e(img) {
+    margin-bottom: 1rem;
+
+    @include m(custome) {
+      max-width: 120px;
+      height: auto;
+    }
+  }
+  @include e(p) {
+    margin-bottom: 18px;
+  }
+}
+.footer-box {
+  @include e(item) {
+    color: $white;
+    display: inline-block;
+    margin-right: 7px;
+  }
+}
+.footer-main {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.footer-first {
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  @include e(h5) {
+    margin-bottom: 1rem;
+  }
+  @include e(item) {
+    margin-bottom: 7px;
+  }
+}
+.footer-second {
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  @include e(h5) {
+    margin-bottom: 1rem;
+  }
+  @include e(item) {
+    margin-bottom: 7px;
+  }
+}
+.footer-three {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  @include e(h5) {
+    margin-bottom: 1rem;
+  }
+
+  @include e(item) {
+    margin-bottom: 7px;
+    display: flex;
+    align-items: center;
+  }
+}
+.footer-bottom {
+  margin-top: 42px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 14px 0;
+  @include e(p) {
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  @include e(list) {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  @include e(inline) {
+    margin: 0;
+  }
+  @include e(item) {
+    margin-right: 7px;
+    display: inline-block;
+  }
+}

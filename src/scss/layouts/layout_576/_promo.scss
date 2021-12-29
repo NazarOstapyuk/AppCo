@@ -1,0 +1,16 @@
+.promo-text{
+    @include e(h1){
+        font-size:2.25rem;
+    }
+    @include e(another){
+        font-size:1.16rem;
+    }
+}
+.promo-square{
+    @include e(title){
+        font-size:1.16rem;
+    }
+    @include e(another){
+        font-size:1.16rem;
+    }
+}

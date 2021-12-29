@@ -1,0 +1,12 @@
+.team-body{
+    @include e(title){
+        font-size:2.25rem;
+    }
+    @include e(p){
+        font-size:1.16rem;
+    }
+}
+.team-box{
+    flex: 0 0 50%;
+    max-width: 50%;   
+}

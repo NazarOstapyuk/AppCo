@@ -1,0 +1,52 @@
+.screen {
+  padding: 55px 0;
+}
+
+.screen-body {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  text-align: center;
+  @include e(h2) {
+    font-size: 1.5rem;
+    font-family: $baseFontTitle;
+    font-weight: 600;
+    line-height: 1.21;
+
+    margin-bottom: 1rem;
+  }
+  @include e(p) {
+    font-size: 1.1rem;
+    color: $grey;
+    margin-bottom: 1.25rem;
+  }
+}
+
+.img-fluid {
+  margin: auto;
+  border-radius: 30px;
+  border: 1px solid #d1cfcf;
+}
+.dot-box {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+.dot-box > li {
+  margin-right: 0.5rem;
+}
+.dot-box button {
+  font-size: 0px;
+  background: #d1cfcf;
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.dot-box .slick-active button {
+  background: $purple;
+}

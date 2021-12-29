@@ -1,0 +1,14 @@
+.download-body{
+    @include e(title){
+      font-size:2.25rem;  
+    }
+    @include e(p){
+        font-size:1.16rem;  
+      }
+}
+.download-btn{
+@include e(custome){
+    font-size:15px;
+    font-weight: 700;
+}
+}

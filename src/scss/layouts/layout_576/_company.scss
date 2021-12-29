@@ -1,0 +1,8 @@
+.company-body{
+    @include e(title){
+        font-size:2.25rem;
+    }
+    @include e(p){
+        font-size:1.16rem;
+    }
+}

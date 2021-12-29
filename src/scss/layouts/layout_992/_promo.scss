@@ -1,0 +1,6 @@
+.promo-square__box {
+  transition: all 0.2s ease-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+}

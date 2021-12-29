@@ -1,0 +1,28 @@
+.price-box {
+  padding: 3rem;
+  transition: all 0.2s ease-out;
+  &:hover {
+    box-shadow: 0px -13px 0px 0px rgba(145, 7, 145, 1);
+  }
+}
+.price-connect {
+  text-align: center;
+}
+.price-list {
+  @include e(box) {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  @include e(header) {
+    cursor: pointer;
+  }
+}
+.price-card {
+  @include e(btn) {
+    transition: all 0.2s ease-out;
+    &:hover {
+      background: $purple;
+      color: $white;
+    }
+  }
+}

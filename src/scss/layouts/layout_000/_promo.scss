@@ -1,0 +1,59 @@
+.promo {
+  padding: 55px 0;
+}
+
+.promo-text {
+  margin-bottom: 42px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  @include e(h1) {
+    font-weight: 600;
+    margin-bottom: 14px;
+    font-family: $baseFontTitle;
+    font-size: 1.5rem;
+  }
+  @include e(another) {
+    font-size: 1.1rem;
+    color: #707070;
+    margin-bottom: 22px;
+  }
+}
+.promo-square {
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  @include e(box) {
+    text-align: center;
+    padding: 42px;
+    border-radius: 1.5rem;
+    box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.1);
+  }
+  @include e(spot) {
+    margin-bottom: 40px;
+    @include m(custom) {
+      color: #ffffff;
+      font-size: 30px;
+      background: url(../../../i/img/bg__figur/promo-icon-bg.svg) no-repeat;
+      background-position: 45% 25%;
+      background-size: 150px;
+      padding: 35px;
+    }
+  }
+  @include e(title) {
+    font-family: $baseFontTitle;
+    font-size: 1.1rem;
+    margin: 0 0 1rem;
+    font-weight: 600;
+    line-height: 1.21;
+  }
+  @include e(another) {
+    color: $grey;
+    margin-bottom: 1.1rem;
+  }
+}

@@ -1,0 +1,8 @@
+.function-title{
+    font-size:2.25rem;
+}
+.function-about{
+    @include e(text){
+        font-size:15px;
+    }
+}

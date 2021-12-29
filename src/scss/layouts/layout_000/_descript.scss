@@ -1,0 +1,111 @@
+.container {
+  position: relative;
+}
+
+.background-image {
+  background: url(../../../i/img/bg/app-hero-bg.jpg) no-repeat center center;
+  background-position: cover;
+  position: relative;
+  width: 100%;
+  display: block;
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: linear-gradient(
+      to right,
+      rgba(32, 40, 119, 0.95),
+      rgba(55, 46, 149, 0.95),
+      rgba(83, 49, 177, 0.9),
+      rgba(114, 48, 205, 0.85),
+      rgba(150, 41, 230, 0.95)
+    );
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+.descript {
+  margin-top: 3rem;
+  color: $white;
+}
+
+.descript-main {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 20px;
+  @include e(h1) {
+    padding-top: 45px;
+    padding-bottom: 14px;
+    line-height: initial;
+    font-family: $baseFontTitle;
+    font-weight: bold;
+    font-size: 2.25rem;
+  }
+  @include e(p) {
+    padding-bottom: 22px;
+  }
+  @include e(form) {
+    border: 1px solid white;
+    border-radius: 30px;
+    background: #fdfcfb;
+    position: relative;
+
+    @include m(control) {
+      text-indent: 5%;
+      padding: 10px 0;
+      padding-left: 10px;
+      align-items: center;
+      height: 28px;
+    }
+    @include m(button) {
+      border: 1px solid white;
+      border-radius: 30px;
+      color: white;
+      background: #6730e3;
+      padding: 16px;
+      position: absolute;
+      right: 0;
+    }
+  }
+  @include e(play) {
+    position: relative;
+    padding: 23px 0;
+    display: flex;
+    align-items: center;
+
+    @include m(btn) {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 2px solid #ffffff;
+      background: #ffffff;
+      display: inline-block;
+      margin-right: 15px;
+    }
+    @include m(symblo) {
+      position: absolute;
+      text-align: center;
+      color: $purple;
+      font-size: 23px;
+      left: 17px;
+      top: 38%;
+    }
+  }
+}
+.descript-phone {
+  position: relative;
+  z-index: 3;
+  @include e(size) {
+    max-width: 100%;
+    height: auto;
+  }
+}
+.descript-bottom {
+  position: absolute;
+  width: 100%;
+  bottom: -40px;
+  @include e(size) {
+    width: 100%;
+  }
+}

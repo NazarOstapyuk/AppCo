@@ -1,0 +1,8 @@
+.screen-body{
+    @include e(h2){
+        font-size:2.25rem;
+    }
+    @include e(p){
+        font-size:1.16rem;
+    }
+}

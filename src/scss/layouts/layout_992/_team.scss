@@ -1,0 +1,37 @@
+.team-box {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.team-position {
+  transition: opacity 0.3s, visibility 0.3s;
+  &:hover {
+    .team-info {
+      display: block;
+      background-image: linear-gradient(
+        to right,
+        rgba(32, 40, 119, 0.95),
+        rgba(55, 46, 149, 0.95),
+        rgba(83, 49, 177, 0.9),
+        rgba(114, 48, 205, 0.85),
+        rgba(150, 41, 230, 0.95)
+      );
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 50%;
+    }
+    .team-list {
+      display: flex;
+      @include e(item) {
+        margin-right: 10px;
+      }
+    }
+  }
+}
